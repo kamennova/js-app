@@ -112,13 +112,3 @@ const AnswerOption = (props: { content: string, isTrue: boolean, onSelect: () =>
 );
 
 const getOptionLetter = (i: number,) => ['A', 'B', 'C', 'D',][i];
-
-{/*<li className={'option'}*/
-}
-{/*style={{*/
-}
-{/*fontSize: 20,*/
-
-}
-{/*}}>*/
-}

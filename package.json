@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "gatsby build",
-    "eslilntfix": "node_modules/.bin/eslint ./src/ --config eslintautofix.json --ext .ts,.tsx --fix ",
+    "eslintfix": "node_modules/.bin/eslint ./src/ --config eslintautofix.json --ext .ts,.tsx --fix ",
     "eslint": "node_modules/.bin/eslint ./src/ --ext .ts,.tsx",
     "commitlint": "npx commitlint --e"
   },
