@@ -17,7 +17,6 @@ export default function GameEnd({ location, },) {
             position: 'relative',
         }}>
             <img src={'../static/img/hand.png'} style={{ width: 451, height: 356, }}/>
-
             <div style={{
                 marginLeft: 118,
             }}>
