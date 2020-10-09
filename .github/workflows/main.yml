@@ -1,5 +1,5 @@
 name: standard-workflow
-on: [pull_request, push]
+on: push
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -11,5 +11,7 @@ jobs:
       run: echo "${{ github.event.head_commit.message }}" | npx commitlint  
     - name: Run ESLint
       run: npm run eslint
+    - name: Run tests
+      run: npm run test
     - name: Build
       run: npm run build
