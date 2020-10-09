@@ -2,7 +2,7 @@ name: standard-workflow
 on: 
   push:
     branches:
-      - '!master'
+      - !master
 jobs:
   check:
     runs-on: ubuntu-latest
