@@ -1,0 +1,15 @@
+name: learn-github-actions
+on: [pull_request, push]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install modules
+      run: npm install
+    - name: Run ESLint
+      run: npm run eslint
+    - name: Run commitlinter
+      run: npm run commitlint
+    - name: Build
+      run: npm run build

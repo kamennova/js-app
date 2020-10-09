@@ -5,7 +5,7 @@ import { LEVEL_MONEY, } from "../GameRules";
 import { formatMoney, } from "../helpers";
 
 export default function GameEnd({ location, },) {
-    const level = location.state.level;
+    const level = location.state !== undefined ? location.state.level : 0;
 
     return (
         <div style={{

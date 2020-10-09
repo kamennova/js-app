@@ -4,15 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build",
+    "test": "jest",
+    "build": "gatsby build",
     "eslilntfix": "node_modules/.bin/eslint ./src/ --config eslintautofix.json --ext .ts,.tsx --fix ",
     "eslint": "node_modules/.bin/eslint ./src/ --ext .ts,.tsx",
-    "commitlint": "github.event.head_commit.message | npx commitlint"
+    "commitlint": "npx commitlint --e"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/jest": "^26.0.14",
     "ejs": "^3.1.5",
     "gatsby": "^2.24.69",
     "react": "^16.13.1",
@@ -25,6 +26,8 @@
     "@typescript-eslint/parser": "^4.4.0",
     "eslint": "^7.10.0",
     "eslint-plugin-react": "^7.21.3",
+    "jest": "^26.5.2",
+    "ts-jest": "^26.4.1",
     "typescript": "^4.0.3"
   }
 }
