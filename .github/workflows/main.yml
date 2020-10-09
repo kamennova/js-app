@@ -6,9 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Check commit message
-      run: |
-          MSG=$(git log --format=%B -n 1 ${{ github.event.after }})
-          echo "::set-env name=COMMIT_MESSAGE::${MSG}"
+      run: echo ${{ github.event.head_commit.message }} | npx commitlint
     - name: Install modules
       run: npm install
     - name: Run ESLint
