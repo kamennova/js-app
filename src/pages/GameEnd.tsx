@@ -21,7 +21,9 @@ export default function GameEnd({ location, },) {
             <div style={{
                 marginLeft: 118,
             }}>
-                <span>Total score:</span>
+                <span>
+                    {level === 12 ? "You won! Your score:" : "Total score:"}
+                </span>
                 <h2 style={{
                     fontSize: '56px',
                     fontWeight: 600,
